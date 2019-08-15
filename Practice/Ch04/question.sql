@@ -1,12 +1,12 @@
 --3 商品差益(product margins)テーブルを作る
--- CREATE TABLE product_margins (
---   PRIMARY KEY (id),
---   id         CHAR(4)      NOT NULL,
---   name       VARCHAR(100) NOT NULL,
---   unit_price INTEGER      ,
---   cost_price INTEGER      ,
---   margin     INTEGER
--- );
+CREATE TABLE product_margins (
+  PRIMARY KEY (id),
+  id         CHAR(4)      NOT NULL,
+  name       VARCHAR(100) NOT NULL,
+  unit_price INTEGER      ,
+  cost_price INTEGER      ,
+  margin     INTEGER
+);
 
 -- データ登録
 INSERT INTO product_margins (
