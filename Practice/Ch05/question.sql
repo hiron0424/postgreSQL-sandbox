@@ -35,13 +35,13 @@ ORDER BY
 
 -- 4.
 CREATE VIEW avg_unit_price (
+  -- ここはオリジナルのテーブルに含まれている場合、名前を省略してもOK
   id,
   name,
   grouping,
   unit_price,
   avg_unit_price
-)
-AS
+) AS
 SELECT
   id,
   name,
