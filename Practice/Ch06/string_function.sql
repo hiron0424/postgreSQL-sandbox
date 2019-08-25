@@ -20,7 +20,7 @@ FROM
   sample_string
 ;
 
--- LOWER 小文字化, 大文字かはUPPER
+-- LOWER 小文字化, 大文字化はUPPER
 -- LOWER(文字列)
 SELECT
   str1,
