@@ -11,6 +11,7 @@ WHERE
 
 -- 2.
 -- NULLは IS NULL かIS NOT NULLでないと書けないので、下記のSQLは何も返らない
+-- NOT INの引数にNULLを入れてはダメ！
 SELECT
   name,
   cost_price
