@@ -29,3 +29,21 @@ ON
 WHERE
   SI.store_id = '000A'
 ;
+
+-- 3つのテーブルを結合する
+SELECT
+  SI.store_id,
+  SI.name,
+  SI.item_id,
+  I.name,
+  I.unit_price,
+  ITS.stock
+FROM
+  store_items AS SI INNER JOIN items AS I
+ON SI.item_id = I.id
+  INNER JOIN item_stock AS ITS
+  ON
+    SI.item_id = ITS.item_id
+  WHERE
+    ITS.repository_id = 'S001'
+;
